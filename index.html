@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Clicker</title>
+    <style>
+        body { font-family: 'Kanit', sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
+        .card-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .place-card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            background: white;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .place-card:hover { transform: translateY(-10px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        .place-card img { width: 100%; border-radius: 10px; }
+        h2 { color: #333; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+    <h1>เลือกสถานที่ที่คุณอยากไป</h1>
+    
+    <div class="card-container">
+        <a href="https://www.google.com/maps/search/?api=1&query=วัดพระแก้ว" target="_blank">
+            <div class="place-card">
+                <img src="https://via.placeholder.com/150" alt="วัดพระแก้ว">
+                <h3>วัดพระแก้ว</h3>
+                <p>คลิกเพื่อนำทาง</p>
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=ตลาดน้อย" target="_blank">
+            <div class="place-card">
+                <img src="https://via.placeholder.com/150" alt="ตลาดน้อย">
+                <h3>ตลาดน้อย</h3>
+                <p>คลิกเพื่อนำทาง</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
