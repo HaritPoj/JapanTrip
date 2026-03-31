@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Trip</title>
+    <style>
+        body { font-family: 'Kanit', sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
+        .card-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .place-card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            background: white;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .place-card:hover { transform: translateY(-10px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        .place-card img { width: 100%; border-radius: 10px; }
+        h2 { color: #333; }
+        /* ยกเลิกการใช้ <a> คลุมทั้ง card */
+        .place-card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px; /* ขยายขนาดเล็กน้อยเพื่อให้ใส่ปุ่มคู่ได้ */
+            background: white;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* ส่วนของกลุ่มปุ่ม */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px 5px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.2s;
+            text-align: center;
+        }
+
+        /* ปุ่มไปสถานที่ */
+        .btn-map {
+            background-color: #4285F4;
+            color: white !important;
+        }
+        .btn-map:hover { background-color: #3367D6; }
+
+        /* ปุ่มไปที่จอดรถ */
+        .btn-parking {
+            background-color: #34A853;
+            color: white !important;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white !important; /* บังคับให้ตัวอักษรเป็นสีขาว */
+            text-decoration: none;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .back-button:hover {
+            background-color: #555;
+            transform: translateX(-5px); /* เลื่อนไปทางซ้ายเล็กน้อยเวลา hover */
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">← back</a>
+    <h1>Main Trip</h1>
+    
+    <div class="card-container">
+        <div class="place-card">
+        <img src="pic/mh1.jpg" alt="MH1">
+        <h3>36 13’ 52.7”N 137 58’ 36”E</h3>
+        
+        <div class="button-group">
+            <a href="#" 
+               target="_blank" class="btn btn-map">to destination</a>
+            
+            <a href="#" 
+               target="_blank" class="btn btn-parking">nearest park</a>
+        </div>
+    </div>
+
+    <div class="place-card">
+        <img src="pic/mh2.jpg" alt="MH2">
+        <h3>36 24’ 11.3”N 138 14’ 49.3”E</h3>
+        <div class="button-group">
+            <a href="#" target="_blank" class="btn btn-map">to destination</a>
+            <a href="#" target="_blank" class="btn btn-parking">nearest park</a>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
